@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.blue:hover {
+  color: #00b4ff;
+}
+
+.green:hover {
+  color: #97fe01;
+}
+
+.purple:hover {
+  color: #c300ff;
+}
+
+.red:hover {
+  color: #ff3535;
+}
+
+body {
+  background: #0e0e0e;
+  text-align: center;
+}
+
+.slide-show img {
+  width: auto;
+  height: 500px;
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+ul li {
+  color: white;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: 80px;
+}
+
+.navbar_container {
+  align-items: center;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.slideshow img {
+  width: auto;
+  height: 500px;
+}
+
+.botao {
+  background: #0e0e0e;
+  color: white;
+  border: none;
+  border: 1px solid white;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+  padding: 10px;
+}
+
+.botaodireira {
+  left: auto;
+  right: 150px;
+}
+
+.slideshow {
+  /* z-index: -1; */
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}

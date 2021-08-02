@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/shop.css">
+  <title>Shop</title>
+</head>
+
+<body>
+
+
+  <navbar id="navbar">
+    <div class="navbar_container">
+      <ul>
+        <li class="navbar_items">
+          <a href="shop.html" class="blue">shop</a>
+        </li>
+        <li class="navbar_items">
+          <a href="#" class="green">faq</a>
+        </li>
+        <li>
+          <a href="index.html"><img src="./img/logos/WhiteLogo.png" class="logo" alt="Logo MyDrugs"></a>
+        </li>
+        <li class="navbar_items">
+          <a href="#" class="purple">safety</a>
+        </li>
+        <li class="navbar_items">
+          <a href="#" class="red">contact</a>
+        </li>
+      </ul>
+    </div>
+  </navbar>
+
+  <body onLoad="slide1()"></body>
+  <img id="slide1">
+  <script src="/js/main.js"></script>
+  <script type="text/javascript">
+    function slide1() {
+      const slide = document.getElementById("slide1")
+      let slideAtual = 0
+      setInterval(() => {
+        slideAtual == 0 ? (() => {
+          slideAtual = 1
+          slide.src = "./img/SliderImages/SmallerSliders/banner-shop.png"
+        })() : (() => {
+          slideAtual = 0
+          slide.src = "./img/SliderImages/SmallerSliders/promocao.png"
+        })()
+      }, 2000);
+    }
+  </script>
+
+  <div class="title">
+    <h2>Most Popular</h2>
+  </div>
+  <div class="container">
+    <div class="card_shop">
+      <img src="./img/products/purple_pill.png" alt="">
+      <h3>Purple Flower</h3>
+      <p>
+        70MG OF MDMA PER PILL</p>
+      <a href="#" class="btc">0.0021 BTC</a>
+      <a href="#" class="eth">0.0802 ETH</a>
+      <div class="card_shop">
+        <img src="./img/products/blue_pill.png" alt="">
+        <h3>Purple Flower</h3>
+        <p>
+          70MG OF MDMA PER PILL</p>
+        <a href="#" class="btc">0.0021 BTC</a>
+        <a href="#" class="eth">0.0802 ETH</a>
+      </div>
+
+</body>
+
+</html>
