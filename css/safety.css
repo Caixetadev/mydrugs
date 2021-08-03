@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap%22");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0e0e0e;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+ul li {
+  color: white;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.purple {
+  color: #c300ff;
+}
+
+.blue:hover {
+  color: #00b4ff;
+}
+
+.green:hover {
+  color: #97fe01;
+}
+
+.red:hover {
+  color: #ff3535;
+}
+
+.navbar_container {
+  align-items: center;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 80px;
+}
+
+main > div {
+  margin: 0 auto;
+  display: grid;
+  border-style: solid;
+  border-color: white;
+  border-radius: 40px;
+  margin-top: 30px;
+  width: 60%;
+}
+
+main > div > img {
+  margin-left: 500px;
+  position: relative;
+  right: 20px;
+  bottom: 130px;
+}
+
+main > div > h1 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: left;
+  color: white;
+}
+
+main > div > h4 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+main > div > p {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  width: 420px;
+  margin-left: 20px;
+  color: white;
+}
