@@ -8,7 +8,8 @@
 
 h2,
 h3,
-p {
+p,
+h1 {
   color: white;
 }
 
@@ -77,10 +78,11 @@ ul li {
   flex-wrap: wrap;
 }
 
-.title h2 {
+.title h1 {
   font-family: "Poppins", sans-serif;
   margin-top: 100px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .card_shop img {
@@ -89,6 +91,7 @@ ul li {
 }
 
 .card_shop {
+  margin-right: 32px;
   margin-top: 4rem;
   align-items: center;
   width: 18rem;
@@ -129,4 +132,19 @@ ul li {
 
 .eth:hover {
   background: #c0c0c0;
+}
+
+.card_shop2 {
+  margin: 4rem auto;
+  align-items: center;
+  width: 960px;
+  height: 500px;
+  border-radius: 2rem;
+  border: 3px solid white;
+}
+
+.card_shop2 img {
+  float: left;
+  width: 416px;
+  height: 416px;
 }
