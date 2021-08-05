@@ -107,3 +107,12 @@ ul li {
 .carrouselContainer {
   margin-top: 40px;
 }
+
+.carrouselContainer img {
+  position: relative !important;
+  margin: auto;
+  left: 0 !important;
+}
+
+@media screen and (min-width: 1000) {
+}
