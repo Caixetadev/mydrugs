@@ -59,6 +59,13 @@ ul li {
   font-family: "Poppins", sans-serif;
 }
 
+.fixed {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #0e0e0e;
+}
+
 .logo {
   width: 80px;
 }
@@ -135,6 +142,7 @@ ul li {
 }
 
 .card_shop2 {
+  padding: 40px;
   margin: 4rem auto;
   align-items: center;
   width: 960px;
@@ -147,4 +155,48 @@ ul li {
   float: left;
   width: 416px;
   height: 416px;
+}
+
+.card_shop2 h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.card_shop2_text {
+  text-transform: lowercase;
+  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 2.1rem;
+  text-align: left;
+}
+
+.stars {
+  font-size: 25px;
+  padding-top: 30px;
+  color: white;
+  text-align: left;
+}
+
+.rgb {
+  text-align: left;
+  font-style: italic;
+  color: red;
+  font-size: 20px;
+  animation: changeColor 5s infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@-webkit-keyframes changeColor {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
 }

@@ -9,41 +9,48 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>MyDrugs</title>
 </head>
-<body>
-  <navbar id="navbar">
-    <div class="navbar_container">
-      <ul>
-        <li class="navbar_items">
-          <a href="shop.html" class="blue">shop</a>
-        </li>
-        <li class="navbar_items">
-          <a href="faq.html" class="green">faq</a>
-        </li>
-        <li>
-          <a href="index.html"><img src="./img/logos/WhiteLogo.png" class="logo" alt="Logo MyDrugs"></a>
-        </li>
-        <li class="navbar_items">
-          <a href="safety.html" class="purple">safety</a>
-        </li>
-        <li class="navbar_items">
-          <a href="#" class="red">contact</a>
-        </li>
-      </ul>
-    </div>
-  </navbar>
-  <div class="slideshow">
-    <img class="mySlides" src="./img/SliderImages/logo2p.png">
-    <img class="mySlides" src="./img/SliderImages/Slide_Blue_Pill.jpg">
-    <img class="mySlides" src="./img/SliderImages/Slide_Green_Pill.jpg">
-    <img class="mySlides" src="./img/SliderImages/Slide_Purple_Pill.jpg">
-    <img class="mySlides" src="./img/SliderImages/Slide_Red_Pill.jpg">
 
-    <button class="botaoesquerda botao" id="setaesquerda" onclick="plusDivs(-1)">❮</button>
-    <button class="botaodireira botao" onclick="plusDivs(1)"><a href="#">❯</a></button>
+<body>
+  <div class="fixed">
+    <navbar id="navbar">
+      <div class="navbar_container">
+        <ul>
+          <li class="navbar_items">
+            <a href="shop.html" class="blue">shop</a>
+          </li>
+          <li class="navbar_items">
+            <a href="faq.html" class="green">faq</a>
+          </li>
+          <li>
+            <a href="index.html"><img src="./img/logos/WhiteLogo.png" class="logo" alt="Logo MyDrugs"></a>
+          </li>
+          <li class="navbar_items">
+            <a href="safety.html" class="purple">safety</a>
+          </li>
+          <li class="navbar_items">
+            <a href="contact.html" class="red">contact</a>
+          </li>
+        </ul>
+      </div>
+    </navbar>
+  </div>
+  <div class="slideshow">
+
   </div>
 
-  <script src="/js/main.js"></script>
-
+  <script src="/js/carrosel.js"></script>
+  <script>
+    const carrousel = new Carrousel({
+      el: ".slideshow",
+      imgs: [
+        "./img/SliderImages/logo_main_page.png",
+        "./img/SliderImages/Slide_Blue_Pill.jpg",
+        "./img/SliderImages/Slide_Green_Pill.jpg",
+        "./img/SliderImages/Slide_Purple_Pill.jpg",
+        "./img/SliderImages/Slide_Red_Pill.jpg"
+      ]
+    })
+  </script>
 </body>
 
 </html>

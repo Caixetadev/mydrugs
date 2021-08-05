@@ -5,34 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/shop.css">
   <title>Shop</title>
 </head>
 
 <body>
 
-
-  <navbar id="navbar">
-    <div class="navbar_container">
-      <ul>
-        <li class="navbar_items">
-          <a href="shop.html" class="blue">shop</a>
-        </li>
-        <li class="navbar_items">
-          <a href="faq.html" class="green">faq</a>
-        </li>
-        <li>
-          <a href="index.html"><img src="./img/logos/WhiteLogo.png" class="logo" alt="Logo MyDrugs"></a>
-        </li>
-        <li class="navbar_items">
-          <a href="safety.html" class="purple">safety</a>
-        </li>
-        <li class="navbar_items">
-          <a href="#" class="red">contact</a>
-        </li>
-      </ul>
-    </div>
-  </navbar>
+  <div class="fixed">
+    <navbar id="navbar">
+      <div class="navbar_container">
+        <ul>
+          <li class="navbar_items">
+            <a href="shop.html" class="blue">shop</a>
+          </li>
+          <li class="navbar_items">
+            <a href="faq.html" class="green">faq</a>
+          </li>
+          <li>
+            <a href="index.html"><img src="./img/logos/WhiteLogo.png" class="logo" alt="Logo MyDrugs"></a>
+          </li>
+          <li class="navbar_items">
+            <a href="safety.html" class="purple">safety</a>
+          </li>
+          <li class="navbar_items">
+            <a href="contact.html" class="red">contact</a>
+          </li>
+        </ul>
+      </div>
+    </navbar>
+  </div>
 
   <body onLoad="slide1()"></body>
   <img id="slide1">
@@ -40,7 +43,8 @@
   <script type="text/javascript">
     function slide1() {
       const slide = document.getElementById("slide1")
-      let slideAtual = 0
+      let slideAtual = 1
+      slide.src = "./img/SliderImages/SmallerSliders/banner-shop.png"
       setInterval(() => {
         slideAtual == 0 ? (() => {
           slideAtual = 1
@@ -118,7 +122,36 @@
   <section>
     <div class="card_shop2">
       <img src="./img/products/pink_pill.png" alt="">
-      <h2>SMILING DEVIL</h2>
+      <h1>SMILING DEVIL</h1>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p class="rgb">New Additon</p>
+      <p class="card_shop2_text">MEET THE NEWEST EDITION TO OUR LINEUP OF EXCLUSIVE PILLS FROM OUR PARTNER GOODTIMES.
+        HAVE A RASBERRY FLAVORED
+        BLISS, EACH PILL CONTAINS 130MG OF MDMA, AND SOME NATURAL FLAVORING. AVALIBLE STARTING NEXT MONTH.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="card_shop2">
+      <img src="./img/products/yellow_pill.png" alt="">
+      <h1>CONFUSED</h1>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="rgb">New Additon</p>
+      <p class="card_shop2_text">EVER WONDER WHY ECSTACY LOOKS LIKE CANDY BUT IS NEVER FLAVORED? TASTE THE CITRUS LEMON
+        FLAVORED ECSTACY IN YOUR MOUTHS. EACH PILL CONTAINS 125MG OF MDMA, AND SOME NATURAL FLAVORING. AVALIBLE FOR A
+        LIMITED TIME ONLY FOR OUR PREMIUM MEMBERS.</p>
     </div>
   </section>
 
