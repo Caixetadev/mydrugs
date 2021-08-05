@@ -56,6 +56,11 @@ ul li {
   width: 80px;
 }
 
+.fixed {
+  position: sticky;
+  width: 100%;
+}
+
 .navbar_container {
   align-items: center;
   margin-left: 50px;
@@ -97,4 +102,8 @@ ul li {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+
+.carrouselContainer {
+  margin-top: 40px;
 }

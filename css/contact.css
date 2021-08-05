@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.red {
+  color: #ff3535;
+}
+
+.blue:hover {
+  color: #00b4ff;
+}
+
+.green:hover {
+  color: #97fe01;
+}
+
+.purple:hover {
+  color: #c300ff;
+}
+
+body {
+  background: #0e0e0e;
+  text-align: center;
+}
+
+.slide-show img {
+  width: auto;
+  height: 500px;
+}
+
+ul {
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+ul li {
+  color: white;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: 80px;
+}
+
+.fixed {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: #0e0e0e;
+}
+
+.navbar_container {
+  align-items: center;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_shop2 {
+  padding: 40px;
+  margin: 4rem auto;
+  align-items: center;
+  width: 960px;
+  height: 700px;
+  border-radius: 2rem;
+  border: 3px solid white;
+}
+
+.card_shop2 h1 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.container_contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.github {
+  width: 200px;
+  padding: 1rem;
+  background: #484f58;
+  border-color: #484f58 !important;
+  border-radius: 10px;
+}
+
+.github i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.github a {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  display: flex;
+}
+
+.twitter {
+  width: 200px;
+  padding: 1rem;
+  background: #1da1f2;
+  border-color: #484f58 !important;
+  border-radius: 10px;
+}
+
+.twitter i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.twitter a {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  display: flex;
+}
+
+.linkedin {
+  width: 200px;
+  padding: 1rem;
+  background: #4c6ef5;
+  border-color: #484f58 !important;
+  border-radius: 10px;
+}
+
+.linkedin i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.linkedin a {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  display: flex;
+}
+
+.discord {
+  width: 200px;
+  padding: 1rem;
+  background: #7289da;
+  border-color: #484f58 !important;
+  border-radius: 10px;
+}
+
+.discord i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.discord a {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  display: flex;
+}
+
+.contributers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_shop2 h2 {
+  margin-top: 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+
+.card_shop2 h2:after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 2px;
+  background: white;
+  margin: 0 auto 30px;
+}
+
+.contributers {
+  border-bottom: 2px solid white;
+  padding-bottom: 30px;
+  width: 90%;
+  margin: 0 auto 30px;
+}
+
+.contributers2 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  width: 90%;
+  margin: 0 auto 30px;
+}
