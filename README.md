@@ -29,6 +29,6 @@
 
 ---
 
-<p align = "center"> Desenvolvido por <b>Rafael Caixeta</b></p>
+<p align = "center"> Desenvolvido por <b>Rafael Caixeta, Lucas Sampaio e Rafael Fernandes</b></p>
 
 ---
