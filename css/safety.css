@@ -9,6 +9,7 @@
 body {
   background: #0e0e0e;
   text-align: center;
+  cursor: url("../img/logos/mdcursor.png"), auto;
 }
 
 a {
