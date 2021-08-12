@@ -29,6 +29,10 @@
 
 ---
 
-<p align = "center"> Desenvolvido por <b>Rafael Caixeta, Lucas Sampaio e Rafael Fernandes</b></p>
+<p align = "center"> Desenvolvido por:</p>
+
+<table align="left"> <tr Style display inline-block> <td align="center"> <a href="https://github.com/Caixetadev"> <img src="https://avatars.githubusercontent.com/u/87894998?v=4" width="100px;" alt="Foto do Caixeta no GitHub"/><br> <sub> <b>Caixetadev</b> </sub> </a> </td> </table>
+<table align="right"> <tr> <td align="center"> <a href="https://github.com/LucasSampaioOliveira"> <img src="https://avatars.githubusercontent.com/u/82174287?v=4" width="100px;" alt="Foto do Lucas no GitHub"/><br> <sub> <b>LucasSampaio</b> </sub> </a> </td> </table>
+<table align="center"> <tr display="inline-block"> <td align="center"> <a href="https://github.com/rafaelpontes14"> <img src="https://avatars.githubusercontent.com/u/82174173?v=4" width="100px;" alt="Foto do Rafael no GitHub"/><br> <sub> <b>RafaelFernandes</b> </sub> </a> </td> </table>
 
 ---
