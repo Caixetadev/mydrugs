@@ -13,23 +13,33 @@
 
 <body>
   <div class="fixed">
-    <navbar id="navbar">
+    <navbar id="nav">
       <div class="navbar_container">
-        <ul>
-          <li class="navbar_items">
-            <a href="shop.html" class="blue">shop</a>
+        <div class="container-mobile">
+          <button id="btn-mobile"><span id="hamburger"></span></button>
+          <div class="logo-mobile">
+            <a href="index.html"><img src="./img/logos/WhiteLogo.png" class="logo-mobile" alt="Logo MyDrugs"></a>
+          </div>
+        </div>
+        <ul id="menu">
+          <li class="home-mobile">
+            <a href="index.html" id="close">home</a>
           </li>
           <li class="navbar_items">
-            <a href="faq.html" class="green">faq</a>
-          </li>
-          <li>
-            <a href="index.html"><img src="./img/logos/WhiteLogo.png" class="logo" alt="Logo MyDrugs"></a>
+            <a href="shop.html" class="blue" id="close">shop</a>
           </li>
           <li class="navbar_items">
-            <a href="safety.html" class="purple">safety</a>
+            <a href="faq.html" class="green" id="close">faq</a>
+          </li>
+          <li id="logo-mobile">
+            <a href="index.html"><img src="./img/logos/WhiteLogo.png" id="#logo-mobile " class="logo"
+                alt="Logo MyDrugs"></a>
           </li>
           <li class="navbar_items">
-            <a href="contact.html" class="red">contact</a>
+            <a href="safety.html" class="purple" id="close">safety</a>
+          </li>
+          <li class="navbar_items">
+            <a href="contact.html" class="red" id="close">contact</a>
           </li>
         </ul>
       </div>
@@ -79,7 +89,9 @@
           <a href="https://discord.gg/3vDeX2zEHm" target="_blank"><i class="fab fa-discord"></i>Tropa do Caixeta</a>
         </div>
       </div>
+    </div>
   </section>
+  <script src="./js/mobile.js"></script>
 </body>
 
 </html>

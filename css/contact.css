@@ -58,6 +58,22 @@ ul li {
   width: 80px;
 }
 
+#btn-mobile {
+  display: none;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.container-mobile {
+  display: none;
+}
+
+.home-mobile {
+  display: none;
+}
+
 .fixed {
   position: sticky;
   width: 100%;
@@ -88,6 +104,24 @@ ul li {
   color: white;
   font-size: 40px;
   margin-bottom: 20px;
+  font-style: italic;
+  animation: changeColor 2s infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@-webkit-keyframes changeColor {
+  0% {
+    color: #ffbc00;
+  }
+  25% {
+    color: #f1af09;
+  }
+  50% {
+    color: #daa520;
+  }
+  100% {
+    color: #c18c07;
+  }
 }
 
 .container_contact {
@@ -206,3 +240,137 @@ ul li {
   width: 90%;
   margin: 0 auto 30px;
 }
+
+
+@media screen and (max-width: 600px) {
+.card_shop2 {
+  width: 85%;
+  height: auto;
+}
+
+.card_shop2 h1 {
+  font-size: 25px;
+}
+
+.card_shop2 h2 {
+  font-size: 20px;
+}
+
+.twitter, .discord, .linkedin {
+ display: none; 
+}
+
+  #logo-mobile {
+    display: none !important;
+  }
+
+  #menu li:nth-child(1) {
+    border-top: 1px solid grey;
+  }
+
+  #menu li:last-child {
+    border-bottom: 1px solid grey;
+  }
+
+  #nav ul {
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 0px;
+    right: 0px;
+    background-color: #101010;
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  .container-mobile {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  #nav.active #menu {
+    height: 100vh;
+    visibility: visible;
+    overflow-y: hidden;
+  }
+
+  .logo-mobile {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: 8px 16px;
+  }
+
+  .navbar_container {
+    display: flex;
+    margin: 0;
+  }
+
+  .home-mobile {
+    display: flex;
+  }
+
+  #menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 50px 2.3rem;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    gap: 0.5rem;
+    z-index: 1100;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #nav button {
+    visibility: visible;
+  }
+
+  #nav ul li::after {
+    display: none;
+  }
+}
+
