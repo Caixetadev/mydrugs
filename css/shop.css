@@ -71,6 +71,22 @@ ul li {
   width: 80px;
 }
 
+#btn-mobile {
+  display: none;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.container-mobile {
+  display: none;
+}
+
+.home-mobile {
+  display: none;
+}
+
 .navbar_container {
   align-items: center;
   margin-left: 50px;
@@ -111,7 +127,6 @@ ul li {
 .card_shop h3 {
   font-family: "Poppins", sans-serif;
   margin-bottom: 2em;
-
   display: block;
 }
 
@@ -199,5 +214,156 @@ ul li {
   }
   100% {
     color: green;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo-mobile {
+    display: none !important;
+  }
+
+  #slide1 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .card_shop {
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  .card_shop2 {
+    width: 85%;
+  }
+
+  .card_shop2 h1 {
+    font-size: 20px;
+  }
+
+  .stars {
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .card_shop2 img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card_shop2 p {
+    font-size: 14px;
+  }
+
+  #menu li:nth-child(1) {
+    border-top: 1px solid grey;
+  }
+
+  #menu li:last-child {
+    border-bottom: 1px solid grey;
+  }
+
+  #nav ul {
+    display: block;
+    position: absolute;
+    width: 70%;
+    top: 0px;
+    right: 0px;
+    background-color: #101010;
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  .container-mobile {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  #nav.active #menu {
+    height: 100vh;
+    visibility: visible;
+    overflow-y: hidden;
+  }
+
+  .logo-mobile {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: 8px 16px;
+  }
+
+  .navbar_container {
+    display: flex;
+    margin: 0;
+  }
+
+  .home-mobile {
+    display: flex;
+  }
+
+  #menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 50px 2.3rem;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    gap: 0.5rem;
+    z-index: 1100;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #nav button {
+    visibility: visible;
+  }
+
+  #nav ul li::after {
+    display: none;
   }
 }

@@ -144,8 +144,8 @@ class Carrousel{
 				this.voltarAoUltimoCarrousel()
 			}
 		})
-		document.querySelector(`.carrouselContainer #right`).removeAttribute("id")
-		document.querySelector(`.carrouselContainer #left`).removeAttribute("id")
+		// document.querySelector(`.carrouselContainer #right`).removeAttribute("id")
+		// document.querySelector(`.carrouselContainer #left`).removeAttribute("id")
 	}
 }
 
